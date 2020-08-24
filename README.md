@@ -54,6 +54,8 @@ am_pm_flag=0 #填报时间段模式，修改数字进行设定：0——填报�
 本项目灵感来自https://github.com/chaoers/xjtu-temperature-selenium<br>
 特别鸣谢[@chaoers](https://github.com/chaoers)
 ## 联系方式
-如有必要，可以联系本人，微信号：Lost-MSth
+如有必要，可以联系本人
+微信号：Lost-MSth
+邮箱：th84292@foxmail.com
 ## 使用许可
 [MIT](LICENSE) © Lost
