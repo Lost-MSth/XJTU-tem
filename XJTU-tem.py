@@ -38,7 +38,7 @@ def login(netid,password): #登陆
         driver.find_element_by_class_name("pwd").send_keys(password)
         driver.implicitly_wait(0.5)
         driver.find_element_by_id("account_login").send_keys(Keys.ENTER)
-        driver.get('http://one2020.xjtu.edu.cn/EIP/user/index.htm')
+
         try:
             element = WebDriverWait(driver,3,0.5).until(EC.url_contains("one2020.xjtu.edu.cn"))
         except:
