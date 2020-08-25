@@ -50,8 +50,9 @@ am_pm_flag=0 #填报时间段模式，修改数字进行设定：0——填报�
 2. 学校的填报时间限制目前无法绕过，请在以下时间段使用本程序`1、每天上午填报时间段：6:00—11:00。 2、每天下午填报时间段：12:00—17:00。`
 3. 请务必保证环境搭建无误，IE配置错误将导致程序无法运行
 4. 请保证网络环境畅通
+5. 请确保曾经进行过健康报的填报，否则无法从服务器上获取到其它信息
 ## 鸣谢
-本项目灵感来自https://github.com/chaoers/xjtu-temperature-selenium<br>
+本项目灵感来自[xjtu-temperature-selenium|西安交通大学每日健康报自动化脚本](https://github.com/chaoers/xjtu-temperature-selenium)<br>
 特别鸣谢[@chaoers](https://github.com/chaoers)
 ## 联系方式
 如有必要，可以联系本人  
