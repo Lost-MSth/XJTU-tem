@@ -1,12 +1,12 @@
-##西交每日健康报填报修改版  by Lost
+##西交健康每日报填报修改版v1.1  by Lost
 import datetime
 
 ##设置选项
 netid = "" #NetID
 password = "" #密码
 temperature = "36.5" #体温
-start_date=datetime.date(2020,8,24) #填报起始日期，别太出格，自己把握，这里没测试填到很久以前会发生什么
-end_date=datetime.date(2020,8,28) #填报终止日期，尽量别超过当天日期
+start_date=datetime.date(2020,8,29) #填报起始日期，别太出格，自己把握，这里没测试填到很久以前会发生什么
+end_date=datetime.date(2020,8,30) #填报终止日期，尽量别超过当天日期
 am_pm_flag=0 #填报时间段模式，修改数字进行设定：0——填报上下午     1——只填报上午     2——只填报下午
 ##
 
@@ -38,14 +38,16 @@ def login(netid,password): #登陆
         driver.find_element_by_class_name("pwd").send_keys(password)
         driver.implicitly_wait(0.5)
         driver.find_element_by_id("account_login").send_keys(Keys.ENTER)
-
+        
         try:
-            element = WebDriverWait(driver,3,0.5).until(EC.url_contains("one2020.xjtu.edu.cn"))
+            driver.implicitly_wait(10)
+            driver.get('http://jkrb.xjtu.edu.cn/EIP/user/index.htm')
         except:
             pass
     if i>=5:
         driver.quit()
         raise Exception("Error!")
+    
     return driver
 
 
